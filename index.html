@@ -437,7 +437,7 @@
           <i class="fa-solid fa-flag-checkered"></i> Selesai & Lihat Hasil
         </button>
         <button id="pauseSaveBtn" class="w-full bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold text-xs py-2.5 rounded-xl transition flex items-center justify-center gap-2">
-          <i class="fa-solid fa-floppy-disk"></i> Simpan & Keluar
+          <i class="fa-solid fa-floppy-disk"></i> Keluar
         </button>
       </aside>
     </div>
@@ -9060,12 +9060,12 @@ function bindNavigation() {
     );
   });
 
-            // Simpan & keluar
+            // Keluar
   $('#pauseSaveBtn').addEventListener('click', () => {
     // Pastikan state page = 'quiz' agar saat restore kembali ke quiz
     STATE.page = 'quiz';
     saveState();  // simpan dengan page='quiz'
-    toast('Progres disimpan. Anda bisa melanjutkan nanti.', 'success', 2500);
+    toast('Semangat belajarnya  gais', 'success', 2500);
     // Pindah ke cover TANPA mengubah STATE.page (keepPage=true) dan TANPA save ulang
     setTimeout(() => goToCover(true, true), 500);
   });
